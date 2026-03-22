@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9DA001672F70653300238BD9 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9DA001662F70653300238BD9 /* AudioKit */; };
+		9DA0016F2F70672E00238BD9 /* AudioKitEX in Frameworks */ = {isa = PBXBuildFile; productRef = 9DA0016E2F70672E00238BD9 /* AudioKitEX */; };
+		9DA001722F70675100238BD9 /* SoundpipeAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9DA001712F70675100238BD9 /* SoundpipeAudioKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DA001672F70653300238BD9 /* AudioKit in Frameworks */,
+				9DA0016F2F70672E00238BD9 /* AudioKitEX in Frameworks */,
+				9DA001722F70675100238BD9 /* SoundpipeAudioKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +75,8 @@
 			name = Melo;
 			packageProductDependencies = (
 				9DA001662F70653300238BD9 /* AudioKit */,
+				9DA0016E2F70672E00238BD9 /* AudioKitEX */,
+				9DA001712F70675100238BD9 /* SoundpipeAudioKit */,
 			);
 			productName = Melo;
 			productReference = 9DA0006F2F70620100238BD9 /* Melo.app */;
@@ -102,6 +108,8 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				9DA001652F70653300238BD9 /* XCRemoteSwiftPackageReference "AudioKit" */,
+				9DA0016D2F70672E00238BD9 /* XCRemoteSwiftPackageReference "AudioKitEX" */,
+				9DA001702F70675100238BD9 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9DA000702F70620100238BD9 /* Products */;
@@ -347,6 +355,22 @@
 				minimumVersion = 5.6.5;
 			};
 		};
+		9DA0016D2F70672E00238BD9 /* XCRemoteSwiftPackageReference "AudioKitEX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKitEX";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.2;
+			};
+		};
+		9DA001702F70675100238BD9 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/SoundpipeAudioKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -354,6 +378,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9DA001652F70653300238BD9 /* XCRemoteSwiftPackageReference "AudioKit" */;
 			productName = AudioKit;
+		};
+		9DA0016E2F70672E00238BD9 /* AudioKitEX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DA0016D2F70672E00238BD9 /* XCRemoteSwiftPackageReference "AudioKitEX" */;
+			productName = AudioKitEX;
+		};
+		9DA001712F70675100238BD9 /* SoundpipeAudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DA001702F70675100238BD9 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */;
+			productName = SoundpipeAudioKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
